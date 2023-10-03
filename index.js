@@ -5,7 +5,7 @@ const fs = require("fs");
 const path = require("path");
 
 const app = express();
-const port = 1337;
+const port =  process.env.PORT || 1337;
 
 // Set up multer for image uploads
 const storage = multer.memoryStorage();
